@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: lightblue;
+        margin: auto;
+        padding: 10px;
+        width: 50%;
+      }
+
+      h1 {
+        font-family: Helvetica;
+      }
+
+      form {
+        background: #cbe6ef;
+        border-radius: 25px;
+        border: 2px solid #62b4cf;
+        padding: 20px;
+        width: auto;
+        height: auto;
+      }
+    </style>
+    <title>Chris' NodeApp</title>
+  </head>
+
+  <body>
+    <h1>Enter your name</h1>
+    <form method="post" action="/addname">
+      <input type="text" name="firstName" placeholder="Enter first name..." required>
+      <input type="text" name="lastName" placeholder="Enter last name..." required>
+      <input type="submit" value="Add Name">
+    </form>
+  </body>
+</html>
